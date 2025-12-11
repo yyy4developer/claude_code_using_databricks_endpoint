@@ -13,6 +13,13 @@ Claude CodeをDatabricksのServing Endpoints経由で使用するためのセッ
 疎通確認スクリプト（`test_connection.py`）を使用する場合は、`requests`ライブラリをインストールしてください：
 
 ```bash
+# macOS/Linuxの場合
+pip3 install requests
+
+# または
+python3 -m pip install requests
+
+# Windowsの場合
 pip install requests
 ```
 
