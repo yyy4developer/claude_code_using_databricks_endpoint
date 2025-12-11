@@ -12,7 +12,7 @@
 
 ### ステップ1: Node.jsのインストール
 
-#### macOS（Homebrewを使用）
+#### macOS（Homebrewを使用）.   
 
 ```bash
 # Homebrewがインストールされていない場合
