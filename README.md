@@ -2,6 +2,20 @@
 
 Claude CodeをDatabricksのServing Endpoints経由で使用するためのセットアップガイドです。
 
+## 前提条件
+
+- **Python**: 3.8以上
+- **Node.js**: 18以上（推奨: 20以上）
+- **requestsライブラリ**: 疎通確認スクリプトで使用
+
+### Python依存関係のインストール
+
+疎通確認スクリプト（`test_connection.py`）を使用する場合は、`requests`ライブラリをインストールしてください：
+
+```bash
+pip install requests
+```
+
 ## クイックスタート
 
 1. **Claude Codeのインストール**: [INSTALL.md](./INSTALL.md)を参照
