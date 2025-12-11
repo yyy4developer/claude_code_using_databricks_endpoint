@@ -2,6 +2,46 @@
 
 このドキュメントでは、Claude CodeでDatabricksエンドポイントを使用するための設定ファイル（`~/.claude/settings.json`）の編集方法を説明します。
 
+## 前提条件
+
+settings.jsonを編集する前に、以下の手順を完了してください。
+
+### ステップ1: Claude Codeのインストール
+
+Claude Codeがまだインストールされていない場合は、以下のコマンドでインストールします：
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+インストールを確認：
+
+```bash
+claude --version
+```
+
+### ステップ2: Claude Codeの初期設定
+
+初めてClaude Codeを実行する際に、初期設定が必要です。以下のコマンドを実行してください：
+
+```bash
+claude
+```
+
+ログイン方法の選択画面が表示されます。以下のオプションを選択してください：
+
+```
+2. Anthropic Console account · API usage billing
+```
+
+画面の指示に従って認証を完了してください。ブラウザが開き、Anthropic Consoleでの認証が求められます。
+
+初期設定が完了すると、`~/.claude/` ディレクトリと必要な設定ファイルが自動的に作成されます。
+
+### ステップ3: Databricks用のsettings.json設定
+
+初期設定完了後、DatabricksエンドポイントをClaude Codeで使用するために、settings.jsonを編集します。以下のセクションで詳しく説明します。
+
 ## 設定ファイルの場所
 
 設定ファイルは以下の場所に配置されます：
@@ -109,7 +149,7 @@ Sonnetモデルを使用する場合のデフォルトモデル名を指定し�
     "ANTHROPIC_AUTH_TOKEN": "dapiXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "databricks-claude-sonnet-4-5"
   },
-  "alwaysThinkingEnabled": false
+  "alwaysThinkingEnabled": true
 }
 ```
 
